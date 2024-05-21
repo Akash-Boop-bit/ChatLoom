@@ -1,0 +1,236 @@
+.box {
+  position: fixed;
+  bottom: 4%;
+  width: 70%;
+  left: 24.5%;
+  border-radius: 2rem;
+  background-color: hsl(240, 100%, 70%);
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.box input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.box button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.box p {
+  text-align: center;
+  color: black;
+  display: none;
+}
+
+.box button:hover {
+  background-color: hsl(60, 100%, 35%);
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+}
+
+.users {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  height: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  list-style: decimal;
+  color: white;
+}
+
+.users h3 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  color: yellow;
+}
+
+.users ol {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chats {
+  width: 80%;
+  margin-left: 20%;
+  min-height: 100%;
+  background-image: url("./images/noob9.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.leave {
+  position: fixed;
+  bottom: 4%;
+  left: 5%;
+  background-color: #e74c3c; /* Red color */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding around the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor when hovering */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); /* Shadow for depth */
+}
+
+.leave:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Active state */
+.leave:active {
+  background-color: #a93226; /* Even darker red when button is active */
+}
+
+.container {
+  /* background: linear-gradient(to bottom, #072e33, #294d61); */
+  list-style: none;
+  margin: auto;
+  width: 92%;
+  height: 74%;
+  padding: 2rem 1rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.elchat {
+  background-color: white;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
+  width: auto;
+  max-width: 50%;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.6rem;
+  border-top-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  text-align: start;
+}
+
+.elchat .name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: left;
+  color: blue;
+  margin-bottom: 0.2rem;
+}
+
+.mechat {
+  background-color: black;
+  color: white;
+  font-size: 1.6rem;
+  width: auto;
+  max-width: 50%;
+  margin-left: auto;
+  padding: 0.4rem 0.8rem;
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  margin-bottom: 0.6rem;
+  text-align: start;
+}
+
+.mechat .name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: left;
+  color: yellow;
+  margin-bottom: 0.2rem;
+}
+
+.delroom {
+  padding: 0.2rem 0.4rem; /* Padding inside the button */
+  margin: 5px; /* Margin around the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: red; /* Blue background color */
+  color: #fff; /* White text color */
+  font-size: 0.8rem; /* Font size */
+  font-weight: bold; /* Font weight */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.main h1 {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+
+.main h2 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+    width: 100vw;
+  }
+  .users h3 {
+    padding: 1rem 0;
+  }
+  .users {
+    position: relative;
+    width: 100%;
+    min-height: none;
+    height: auto;
+    padding: 0 0 4rem 0;
+  }
+  .main h2 {
+    margin-top: 1rem;
+  }
+  .main h1 {
+    text-align: center;
+    padding: 1rem 0 0 0;
+  }
+  .leave {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .chats {
+    width: 100%;
+    margin-left: 0;
+    height: 100vh;
+    background-image: url("./images/noob9.gif");
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+  }
+  .box {
+    left: 8%;
+    width: 80%;
+  }
+  .container {
+    height: 73%;
+    width: 90%;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,323 @@
+.main1 {
+  display: flex;
+  height: 100vh;
+  background-image: url("./images/noob4.gif");
+  background-size: contain;
+}
+
+.main1 h1 {
+  font-size: 3rem;
+  color: yellow;
+}
+
+.main2 {
+  color: white;
+  width: 19%;
+  position: fixed;
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  overflow: hidden; /* Ensures content doesn't overflow */
+  height: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+.main3 {
+  width: 60%;
+  margin-left: 20%;
+  padding: 20px; /* Padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
+  text-align: center;
+}
+
+.main5 {
+  color: white;
+  width: 19%;
+  position: fixed;
+  right: 0;
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  overflow: hidden; /* Ensures content doesn't overflow */
+  height: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  list-style: decimal;
+}
+
+.main5 h3 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  color: yellow;
+}
+
+.main5 ol {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addroom {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addroom input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 1rem;
+  width: 90%; /* Full width */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  background-color: #f9f9f9; /* Light grey background */
+  outline: none; /* Remove default outline */
+  box-shadow: none; /* Remove default shadow */
+}
+
+/* Focus state */
+.addroom input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow */
+  background-color: #fff; /* White background */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Hover state */
+.addroom input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-color: #007bff; /* Blue border on hover */
+}
+
+.addroom label {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.addroom button {
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 5px; /* Margin around the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  color: black; /* White text color */
+  background-color: yellow; /* Blue background */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Hover state */
+.addroom button:hover {
+  background-color: hsl(60, 100%, 35%); /* Darker blue background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Active state */
+.addroom button:active {
+  background-color: hsl(
+    60,
+    100%,
+    25%
+  ); /* Even darker blue background on active */
+  box-shadow: none; /* Remove shadow */
+}
+
+.rooms {
+  margin: auto;
+  overflow: hidden;
+  width: 96%;
+  padding: 0.4rem 0;
+  margin-bottom: 0.5rem;
+  min-height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+}
+
+.room {
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 5px; /* Margin around the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: blue; /* Blue background color */
+  color: #fff; /* White text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+.room:hover {
+  background-color: hsl(240, 100%, 70%); /* Darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.delroom {
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 5px; /* Margin around the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: red; /* Blue background color */
+  color: #fff; /* White text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.main2 h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+
+.box {
+  position: fixed;
+  bottom: 4%;
+  width: 50%;
+  left: 24.5%;
+  border-radius: 2rem;
+  background-color: hsl(240, 100%, 70%);
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.box input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.box button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.box p {
+  text-align: center;
+  color: black;
+  display: none;
+}
+
+.box button:hover {
+  background-color: hsl(60, 100%, 35%);
+}
+
+.container {
+  /* background: linear-gradient(to bottom, #072e33, #294d61); */
+  list-style: none;
+  width: 92%;
+  margin-left: 0;
+  height: 75%;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.elchat {
+  background-color: white;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
+  width: auto;
+  max-width: 50%;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.6rem;
+  border-top-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  text-align: start;
+}
+
+.elchat .name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: left;
+  color: blue;
+  margin-bottom: 0.2rem;
+}
+
+.mechat {
+  background-color: black;
+  color: white;
+  font-size: 1.6rem;
+  width: auto;
+  max-width: 50%;
+  margin-left: auto;
+  padding: 0.4rem 0.8rem;
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  margin-bottom: 0.6rem;
+  text-align: start;
+}
+
+.mechat .name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: left;
+  color: yellow;
+  margin-bottom: 0.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main1 {
+    flex-direction: column;
+    background-image: url('./images/noob6.gif');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100vw;
+
+  }
+  .main2 {
+    width: 100vw;
+    position: relative;
+    overflow:visible;
+    order: 1;
+  }
+  .main3 {
+    margin-left: 0;
+    order: 3;
+    width: 100vw;
+    height: 98vh;
+    padding: 1rem 0 0 0;
+  }
+  .main5 {
+    padding: 0 0 1rem 0;
+    background: none;
+    background-color: black;
+    position: relative;
+    width: 100vw;
+    overflow:visible;
+    order: 2;
+  }
+
+  .box {
+    left: 8%;
+    width: 80%;
+  }
+
+  .addroom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

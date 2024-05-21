@@ -1,0 +1,109 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: aliceblue; */
+  background-image: url("./images/noob4.gif");
+  background-size: cover;
+  color: white;
+}
+
+.main1 {
+  width: 30%;
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main1 h1 {
+  color: yellow;
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* General input styling */
+.main1 input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 1rem;
+  width: 90%; /* Full width */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  background-color: #f9f9f9; /* Light grey background */
+  outline: none; /* Remove default outline */
+  box-shadow: none; /* Remove default shadow */
+}
+
+/* Focus state */
+.main1 input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow */
+  background-color: #fff; /* White background */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Hover state */
+.main1 input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-color: #007bff; /* Blue border on hover */
+}
+
+.main1 p {
+  font-size: 1rem;
+  color: hsl(0, 100%, 50%);
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+
+/* General button styling */
+.main1 button {
+    padding: 10px 20px; /* Padding inside the button */
+    margin: 5px; /* Margin around the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Font weight */
+    color: black; /* White text color */
+    background-color: yellow; /* Blue background */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Hover state */
+.main1 button:hover {
+    background-color: hsl(60, 100%, 35%); /* Darker blue background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Active state */
+.main1 button:active {
+    background-color: hsl(60, 100%, 25%); /* Even darker blue background on active */
+    box-shadow: none; /* Remove shadow */
+}
+
+.main1 h4 {
+  margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .main1 {
+    width: 100%;
+  }
+
+  .main {
+    background-position: 80%;
+  }
+}
